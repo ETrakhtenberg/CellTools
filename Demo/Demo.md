@@ -10,14 +10,15 @@ end_time-start_time
 ```
 [1] Time difference of 48.56251 secs
 
-## Read reference and query seurat object files into the R 
+## Read reference and query seurat object files into the R
+
 ```r
 reference <- readRDS(“../vignette_data/reference.rds”) 
 query <- readRDS(“../vignette_data/query.rds”)
 ```
 
 
-## Denoise the reference Seurat Object
+## Denoise the Atlas Seurat Object
 ```r
 start_time <- Sys.time()
 reference <- DeNoise(ref = reference, lab = "type", coef = 1.5)
@@ -38,12 +39,12 @@ end_time-start_time
 ```r
 reference@misc$CellTools$opti_k
 ```
-[1] 5
+[1] 23
 
 ## Map query Seurat object to reference Seurat object
 ```r
 start_time <- Sys.time()
-result<-MapTo(reference,query,lab="type",k="5")
+result<-MapTo(reference,query,lab="type",k=23)
 end_time <- Sys.time()
 end_time-start_time
 ```
