@@ -4,7 +4,7 @@
 
 ```R
 start_time <- Sys.time()
-devtools::install_github("BruceRheaume/CellTools")
+devtools::install_github("TrakhtenbergLab/CellTools")
 end_time <- Sys.time()
 end_time-start_time
 ```
