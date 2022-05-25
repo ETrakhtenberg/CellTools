@@ -49,6 +49,9 @@ end_time <- Sys.time()
 end_time-start_time
 ```
 [1] Time difference of 15.09316 mins
+
+## Accuracy of mapping query object to reference object
+
 ```r
 length(which(result$predicted.id == result$type))/ncol(result)
 ```
