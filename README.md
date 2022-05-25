@@ -13,7 +13,7 @@ library(devtools)
 Then install CellTools by devtools:
 
 ```c
-devtools::install_github("BruceRheaume/CellTools")
+devtools::install_github("TrakhtenbergLab/CellTools")
 library (CellTools)
 ```
 
