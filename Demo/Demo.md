@@ -54,7 +54,7 @@ end_time-start_time
 ```r
 length(which(result$predicted.id == result$type))/ncol(result)
 ```
-[1] 0.9922059
+[1] 0.9833059
 
 
 ## Optimized Tracing of Query to Reference Data
