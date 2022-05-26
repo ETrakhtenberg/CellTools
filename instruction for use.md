@@ -5,7 +5,7 @@
 reference <- readRDS(“/path-to-referencedata”) 
 query <- readRDS(“/path-to-querydata”) 
 ```
-The reference and query seurat objects need to be pre-processed with standard pre-processing workflow for scRNA-seq data in [Seurat].
+The reference and query seurat objects need to be pre-processed with standard pre-processing workflow for scRNA-seq data in [Seurat](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html).
 
 ## Denoise a reference Seurat Object
 
