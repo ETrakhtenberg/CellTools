@@ -3,7 +3,7 @@ Type: Package
 Title: CellTools
 Author: Bruce Rheaume, Jian Xing, Ephraim F Trakhtenberg*
 Maintainer: The package maintainer <jxing@uchc.edu>
-Description: Denoise and improve the integration of scRNA-seq datasets, as well as associate cell types with the global properties of the transcriptome
+Description: Denoise and improve the integration of scRNA-seq datasets.
 License: GNU General Public License v3.0
 Encoding: UTF-8
 LazyData: true
