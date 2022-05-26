@@ -16,8 +16,7 @@ end_time-start_time
 reference <- readRDS(“../vignette_data/reference.rds”) 
 query <- readRDS(“../vignette_data/query.rds”)
 ```
-You can download the reference and query data [here](https://basespace.illumina.com/s/L6R0Dqm6r7R6). The Atlas data which generated the reference and query data is also avaible to download from the same link.
-
+You can download the reference and query data at [https://basespace.illumina.com/s/L6R0Dqm6r7R6](https://basespace.illumina.com/s/L6R0Dqm6r7R6). The Atlas dataset, from which the reference and query datasets were generated, is also available for download at that link.
 ## Denoise the Atlas Seurat Object
 ```r
 start_time <- Sys.time()
