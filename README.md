@@ -1,6 +1,9 @@
 # CellTools
 Self-learning algorithm for denoising and advancing the integration of scRNA-seq datasets
 
+## Software requirement 
+R software
+
 ## Installation
 
 First, we need to install devtools:
