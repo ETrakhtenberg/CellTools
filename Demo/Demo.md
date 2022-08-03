@@ -43,7 +43,7 @@ reference@misc$CellTools$opti_k
 ## Map query Seurat object to reference Seurat object
 ```r
 start_time <- Sys.time()
-result<-MapTo(reference,query,lab="type",k=19)
+result<-MapTo(reference,query,lab="type",k=19, dims=50)
 end_time <- Sys.time()
 end_time-start_time
 ```
