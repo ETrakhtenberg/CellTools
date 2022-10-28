@@ -7,17 +7,6 @@ query <- readRDS(“/path-to-querydata”)
 ```
 The reference and query seurat objects need to be pre-processed with standard pre-processing workflow for scRNA-seq data in [Seurat](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html).
 
-## Denoise a reference Seurat Object
-
-```c
-reference<- DeNoise(ref, lab = "type", coef = 1.5)
-```
-
-* @param ref: Reference Seurat object with pre-calculated UMAP
-* @param lab: The reference label to treat as clusters. Default is "seurat_clusters"
-* @param coef: The coefficient to multiply by the IQR. Default is 1.5
-* @return: Returns a Seurat object with a new slot called "denoise"
-
 
 ## Find the optimal k-weight parameter for KNN
 This function iterates through a select range of k-weight parameters and stores the optimal parameter in the Seurat object
@@ -32,6 +21,18 @@ reference <- OptiK(reference, lab = "type", range = c(5,50), dims = 50, perc = 0
 * @param num If perc = F, OptiK will look for a specific number of cells specified here.
 * @param seed Set the seed for reproducible results. Default = 1984.
 * @return Returns a Seurat object with a new slot where the k-weight is stored: misc$CellTools$opti_k
+
+
+## Denoise a reference Seurat Object
+
+```c
+reference<- DeNoise(ref, lab = "type", coef = 1.5)
+```
+
+* @param ref: Reference Seurat object with pre-calculated UMAP
+* @param lab: The reference label to treat as clusters. Default is "seurat_clusters"
+* @param coef: The coefficient to multiply by the IQR. Default is 1.5
+* @return: Returns a Seurat object with a new slot called "denoise"
 
 
 ## Map query Seurat object to reference Seurat object
