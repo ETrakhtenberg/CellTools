@@ -17,16 +17,6 @@ reference <- readRDS(“../vignette_data/reference.rds”)
 query <- readRDS(“../vignette_data/query.rds”)
 ```
 The reference and query datasets can be downloaded at [https://basespace.illumina.com/s/L6R0Dqm6r7R6](https://basespace.illumina.com/s/L6R0Dqm6r7R6). The Atlas dataset, from which the reference and query datasets were generated, is also available for download at that link.
-## Denoise the Atlas Seurat Object
-```r
-start_time <- Sys.time()
-reference <- DeNoise(ref = reference, lab = "type", coef = 1.5)
-end_time <- Sys.time()
-end_time-start_time
-```
-[1] Time difference of 22.7701 secs
-
-
 ## Find the optimal k-weight parameter for KNN
 ```r
 start_time <- Sys.time()
@@ -39,6 +29,15 @@ end_time-start_time
 reference@misc$CellTools$opti_k
 ```
 [1] 19
+
+## Denoise the Atlas Seurat Object
+```r
+start_time <- Sys.time()
+reference <- DeNoise(ref = reference, lab = "type", coef = 1.5)
+end_time <- Sys.time()
+end_time-start_time
+```
+[1] Time difference of 22.7701 secs
 
 ## Map query Seurat object to reference Seurat object
 ```r
