@@ -77,7 +77,6 @@ MapTo <- function(ref, query, lab = "seurat_clusters", k = "opti", get.anchors =
 #' @param dims Number of PCs to use when get.anchors = T. Default is 30
 #' @return Returns a Seurat object with a new slot where the k-weight is stored: misc$CellTools$opti_k
 #' @references  
-#' Rheaume, B. A., & Trakhtenberg, E. F. (2022). Self-learning algorithm for denoising 
 #' and advancing the integration of scRNA-seq datasets improves the identification of resilient 
 #' and susceptible retinal ganglion cell types 
 #' \href{https://www.biorxiv.org/content/10.1101/2021.10.15.464552v2.abstract}{bioRxiv}.
