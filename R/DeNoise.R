@@ -9,7 +9,6 @@
 #' @references  
 #' and advancing the integration of scRNA-seq datasets improves the identification of resilient 
 #' and susceptible retinal ganglion cell types 
-#' \href{https://www.biorxiv.org/content/10.1101/2021.10.15.464552v2.abstract}{bioRxiv}.
 #' @export 
 DeNoise <- function(ref, lab, coef = 1.5){
   ref.embed <- as.data.frame(ref@reductions$umap@cell.embeddings)
