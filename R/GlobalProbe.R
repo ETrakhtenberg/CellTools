@@ -6,10 +6,10 @@
 #' @param lab The reference @meta.data slot on which to compare global parameters
 #' @return Global correlation analyses of the clusters provided in lab parameter
 #' @references  
-#' Rheaume, B. A., & Trakhtenberg, E. F. (2022). Self-learning algorithm for denoising 
+#' Rheaume, B. A., Xing, J.& Trakhtenberg, E. F. (2022). Self-learning algorithm for denoising 
 #' and advancing the integration of scRNA-seq datasets improves the identification of resilient 
 #' and susceptible retinal ganglion cell types 
-#' \href{https://www.biorxiv.org/content/10.1101/2021.10.15.464552v2.abstract}{bioRxiv}.
+#' \href{https://www.biorxiv.org/content/10.1101/2021.10.15.464552v4}{bioRxiv}.
 #' @export
 GlobalProbe <- function(dat, lab){
   
