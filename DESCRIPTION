@@ -1,6 +1,7 @@
 Package: CellTools
 Type: Package
 Title: CellTools
+Version: 0.1.0
 Author: Bruce Rheaume, Jian Xing, Ephraim F Trakhtenberg*
 Maintainer: The package maintainer <jxing@uchc.edu>
 Description: Denoise and improve the integration of scRNA-seq datasets.
